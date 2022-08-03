@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".Admin.AdminAddQuestionsPage">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#0C567B"
+        app:cardCornerRadius="8dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/textView_AddQuestionAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Question &amp; Answers"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add your question and answers below"
+                android:textColor="@color/white"
+
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Topic"
+                    android:hint="\@topic"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Question"
+                    android:hint="\@question"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_CorrectAnswer"
+                    android:hint="\@correct answer"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Answer2"
+                    android:hint="\@incorrect answer 1"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Answer3"
+                    android:hint="\@incorrect answer 2"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Answer4"
+                    android:hint="\@incorrect answer 3"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="8dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText_Answer5"
+                    android:hint="\@incorrect answer 4"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_LoginAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Add Question &amp; Answers"
+                android:textSize="18sp"
+                android:onClick="addQuestions"/>
+
+            <Button
+                android:id="@+id/button_ClearFields"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Clear Fields"
+                android:textSize="18sp"
+                android:onClick="clearFields"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsPage"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Congratulations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations !"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingBottom="20dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView_Image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/textView_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="user123"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView_Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Your score is 10/14"
+            android:textSize="30sp"
+            android:textColor="#EAEAEA"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView_PreviousScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Previous score is 10/14"
+            android:textSize="30sp"
+            android:textColor="#EAEAEA"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Play again"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:onClick="playAgain"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
